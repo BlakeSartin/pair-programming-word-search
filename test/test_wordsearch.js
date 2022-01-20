@@ -35,4 +35,9 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  it("should retun error if the array is empty", function() {
+    const result = wordSearch([
+    ], 'SEINFELD')
+    assert.equal(result, "Array is empty")
+  })
 });
